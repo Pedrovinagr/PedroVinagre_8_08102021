@@ -2,12 +2,20 @@ import LOGO from '../assets/LOGO.png';
 import '../styles/Banner.css';
 
 function Banner(){
-    const title = 'KASA'
+    
+    const NavHome = 'Accueil';
+    const NavNews = 'A propos'
     return (
         <div>
-            <img src={LOGO} alt='kasa' className='logo' />
-            <h1>{title}</h1>
+            <div>
+                <img src={LOGO} alt='kasa' className='logo' />
+            </div>
+            <div>
+                <a href className="nav home"><span>{NavNews}</span></a>
+                <a href className="nav news"><span>{NavHome}</span></a>
+            </div>
         </div>
+        
     );
 } 
 
