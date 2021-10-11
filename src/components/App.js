@@ -1,4 +1,5 @@
 import Banner from './Banner';
+import Body from './body';
 import Footer from './footer';
 
 function App() {
@@ -6,6 +7,9 @@ function App() {
     <div>
       <div>
         <Banner />
+      </div>
+      <div>
+        <Body/>
       </div>
       <div>
         <Footer />
