@@ -5,7 +5,11 @@
 }
 
 .nav{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
     color: #FF6060;
+    font-size: 24px;
     float: right;
     overflow: hidden;
     margin-left: 57px;

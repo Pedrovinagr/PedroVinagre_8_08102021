@@ -1,6 +1,6 @@
 import Banner from './Banner';
-import Body from './body';
-import Footer from './footer';
+import Sweatband from './Headband';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <Banner />
       </div>
       <div>
-        <Body/>
+        <Sweatband />
       </div>
       <div>
         <Footer />
