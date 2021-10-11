@@ -1,9 +1,15 @@
 import Banner from './Banner';
+import Footer from './footer';
 
 function App() {
   return (
     <div>
-      <Banner />
+      <div>
+        <Banner />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );       
 }

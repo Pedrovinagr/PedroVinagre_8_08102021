@@ -1,16 +1,16 @@
 import LOGO from '../assets/LOGO_Footer.png';
-import '../styles/Banner.css';
+import '../styles/footer.css';
 
 function Footer(){
     
     const Copyright = '© 2020 Kasa. All rights reserved';
     return (
-        <div>
+        <div className='container'>
             <div>
-                <img src={LOGO} alt='kasa' className='logo' />
+                <img src={LOGO} alt='kasa' className='logo_footer'/>
             </div>
             <div>
-                <p className="nav home">{Copyright}</p>
+                <p className='copyright'>{Copyright}</p>
             </div>
         </div>
         
