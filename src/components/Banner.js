@@ -1,4 +1,4 @@
-import LOGO from '../assets/LOGO.png';
+import LOGO from '../assets/LOGO_Banner.png';
 import '../styles/Banner.css';
 
 function Banner(){
