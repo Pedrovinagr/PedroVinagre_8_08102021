@@ -1,17 +1,21 @@
+.heater{
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .logo{
     height: 68px;
     width: 210.32px;
-    position: absolute;
+}
+.nav_container{
+    display: flex;
+    align-items: center;
 }
 
 .nav{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
+    
     color: #FF6060;
-    font-size: 24px;
-    float: right;
-    overflow: hidden;
+    
     margin-left: 57px;
-    margin-top: 17px;
 }

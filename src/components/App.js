@@ -5,15 +5,9 @@ import Footer from './Footer';
 function App() {
   return (
     <div>
-      <div>
-        <Banner />
-      </div>
-      <div>
-        <Sweatband />
-      </div>
-      <div>
-        <Footer />
-      </div>
+      <Banner />
+      <Sweatband />
+      <Footer />
     </div>
   );       
 }

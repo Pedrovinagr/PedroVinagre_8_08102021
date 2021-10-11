@@ -6,13 +6,13 @@ function Banner(){
     const NavHome = 'Accueil';
     const NavNews = 'A propos'
     return (
-        <div>
+        <div className='heater'>
             <div>
                 <img src={LOGO} alt='kasa' className='logo' />
             </div>
-            <div>
-                <a href className="nav home"><span>{NavNews}</span></a>
-                <a href className="nav news"><span>{NavHome}</span></a>
+            <div className='nav_container'>
+                <a href className="nav home"><span>{NavHome}</span></a>
+                <a href className="nav news"><span>{NavNews}</span></a>
             </div>
         </div>
         
