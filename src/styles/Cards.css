@@ -1,8 +1,12 @@
 .cards{
-    display: grid;
-    grid: repeat(2, auto) / auto-flow;
+    display: flex;
+    flex-direction: auto;
+    flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-around;
+    /* grid: repeat(2, auto) / auto-flow;
+    align-content: space-around;
+    justify-content: space-around; */
     margin: 43px 0 43px 0;
     width: 100%;
     height: 829px;
@@ -12,10 +16,12 @@
 
 .card{
     display: table;
-    width: 340px;
-    height: 340px;
+    min-width: 340px;
+    min-height: 340px;
+    max-height: 340px;
     background: #FF6060;
     border-radius: 10px;
+    margin: 30px;
 }
 
 .card_font{
