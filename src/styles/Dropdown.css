@@ -1,0 +1,25 @@
+.dropdowns{
+    display: table;
+    position: relative;
+    margin: auto;
+    background: #FF6060;
+    border-radius: 5px;
+    width: 1023px;
+    height: 47px;
+    align-content: center;
+    margin-top: 31px;
+    margin-bottom: 31px;
+}
+
+.title_dropdown{
+    display: table-cell;
+    vertical-align: middle;
+    color: #FFFFFF;
+    padding-left: 18.08px;
+}
+
+.vector_down{
+    position: absolute;
+    right: 0;
+    padding: 16.86px 16.08px 0 0;
+}

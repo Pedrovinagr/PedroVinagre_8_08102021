@@ -1,0 +1,21 @@
+.container_404{
+    text-align: center;
+    color: #FF6060;
+}
+
+.err404{
+    font-weight: bold;
+    font-size: 288px;
+    margin: 174.74px 0 66px 0;
+    text-align: center;
+    color: #FF6060;
+}
+
+.mess404{
+    font-size: 36px;
+    margin-bottom: 182px;  
+}
+
+.link_home{
+    margin-bottom: 159px;
+}
