@@ -5,7 +5,7 @@ function Footer(){
     
     const Copyright = '© 2020 Kasa. All rights reserved';
     return (
-        <div className='container'>
+        <div className='container_footer'>
             <img src={LOGO} alt='kasa' className='logo_footer'/>
             <p className='copyright'>{Copyright}</p>
         </div>
