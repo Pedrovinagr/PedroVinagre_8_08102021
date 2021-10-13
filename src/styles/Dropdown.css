@@ -11,6 +11,18 @@
     margin-bottom: 31px;
 }
 
+.dropdowns_up{
+    display: table;
+    position: relative;
+    margin: auto;
+    background: #FF6060;
+    border-radius: 5px 5px 0 0;
+    width: 1023px;
+    height: 47px;
+    align-content: center;
+    /* margin-top: 31px; */
+}
+
 .title_dropdown{
     display: table-cell;
     vertical-align: middle;
@@ -39,13 +51,11 @@
 
 .text_content{
     background: #F7F7F7;
-    border-radius: 5px;
-    width: 1023px;
-    height: 47px;
+    border-radius: 0 0 5px 5px;
+    width: 968px;
     align-content: center;
-    margin-bottom: 31px;
     margin: auto;
     color: #FF6060;
     padding: 18px 36px 27px 19px;
-    padding: -18px -36px -27px -19px;
+    margin-bottom: 31px;
 }

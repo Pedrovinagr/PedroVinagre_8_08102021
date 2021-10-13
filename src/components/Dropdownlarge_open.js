@@ -14,7 +14,7 @@ function DropdownOpen(){
     return (
         <div>
             <div>
-                <div className='dropdowns'>
+                <div className='dropdowns_up'>
                     <p className='title_dropdown'>{Reliability}</p> 
                     <img src={vectorUp} alt='kasa' className='vector_down' />
                 </div>
@@ -23,7 +23,7 @@ function DropdownOpen(){
                 </div>
             </div>
 
-            <div className='dropdowns'>
+            <div className='dropdowns_up'>
                 <p className='title_dropdown'>{Respect}</p> 
                 <img src={vectorUp} alt='kasa' className='vector_down' />
             </div>
@@ -32,7 +32,7 @@ function DropdownOpen(){
             </div>
             
 
-            <div className='dropdowns'>
+            <div className='dropdowns_up'>
                 <p className='title_dropdown'>{Serve}</p> 
                 <img src={vectorUp} alt='kasa' className='vector_down' />
             </div>
@@ -41,14 +41,13 @@ function DropdownOpen(){
             </div>
             
 
-            <div className='dropdowns'>
+            <div className='dropdowns_up'>
                 <p className='title_dropdown'>{Security}</p> 
                 <img src={vectorUp} alt='kasa' className='vector_down' />
             </div>
             <div className='content'>
                 <p className='text_content'>{ContentSecurity}</p> 
-            </div>
-            
+            </div>            
         </div>
     );
 } 
