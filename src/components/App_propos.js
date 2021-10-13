@@ -2,6 +2,7 @@ import Banner from './Banner';
 import SweatbandPropos from './Headband_propos';
 import Footer from './Footer';
 import DropdownClose from './Dropdownlarge_close';
+import DropdownOpen from './Dropdownlarge_open';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Banner />
       <SweatbandPropos />
       <DropdownClose />
+      <DropdownOpen />
       <Footer />
     </div>
   );       
