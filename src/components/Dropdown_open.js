@@ -8,8 +8,8 @@ function DropdownOpen(){
     const ContentEquipements = 'Climatisation Wi-Fi Cuisine Espace de travail Fer à repasser Sèche-cheveux Cintres'
     
     return (
-        <div>
-            <div>
+        <div className='dropdown'>
+            <div className='drop1'>
                 <div className='dropdowns_up'>
                     <p className='title_dropdown'>{description}</p> 
                     <img src={vectorUp} alt='kasa' className='vector_down' />
@@ -18,13 +18,14 @@ function DropdownOpen(){
                     <p className='text_content'>{ContantDescription}</p> 
                 </div>
             </div>
-
-            <div className='dropdowns_up'>
-                <p className='title_dropdown'>{equipements}</p> 
-                <img src={vectorUp} alt='kasa' className='vector_down' />
-            </div>
-            <div className='content'>
-                <p className='text_content'>{ContentEquipements}</p> 
+            <div className='drop2'>
+                <div className='dropdowns_up'>
+                    <p className='title_dropdown'>{equipements}</p> 
+                    <img src={vectorUp} alt='kasa' className='vector_down' />
+                </div>
+                <div className='content'>
+                    <p className='text_content'>{ContentEquipements}</p> 
+                </div>
             </div>
                       
         </div>

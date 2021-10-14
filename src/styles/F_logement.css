@@ -68,11 +68,9 @@
 }
 
 /* TAGS */
-.tag_content{
-    display: flex;
-}
 .tags{
     display: flex;
+    position: relative;
 }
 .tags p{
     display: table-cell;
@@ -92,23 +90,23 @@
     margin: 0 10px 24px 0;
 }
 
-.star .orange_star{
-    color: #E3E3E3;
-}
-
-.star .grey_star{
-    color: #E3E3E3;
+.star{
+    position: absolute;
+    right: 0;
 }
 
 /* DROPDOWN */
+.dropdown{
+    display: flex;
 
+}
 .dropdowns{
     display: table;
     position: relative;
     margin: auto;
     background: #FF6060;
     border-radius: 5px;
-    width: 1023px;
+    width: auto;
     height: 47px;
     align-content: center;
     margin-top: 31px;
@@ -121,9 +119,18 @@
     margin: auto;
     background: #FF6060;
     border-radius: 5px 5px 0 0;
-    width: 1023px;
+    width: 100%;
     height: 47px;
     align-content: center;
+}
+.drop1{
+    margin-right: 48px;
+    width: 50%;
+}
+
+.drop2{
+    margin-left: 48px;
+    width: 50%;
 }
 
 .title_dropdown{
@@ -155,7 +162,7 @@
 .text_content{
     background: #F7F7F7;
     border-radius: 0 0 5px 5px;
-    width: 968px;
+    width: auto;
     align-content: center;
     margin: auto;
     color: #FF6060;
