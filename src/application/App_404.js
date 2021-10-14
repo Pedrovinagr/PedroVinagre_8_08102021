@@ -1,6 +1,6 @@
-import Banner from './Banner';
-import FileNotFound from './404_error';
-import Footer from './Footer';
+import Banner from '../components/Banner';
+import FileNotFound from '../components/404_error';
+import Footer from '../components/Footer';
 
 function App() {
   return (
