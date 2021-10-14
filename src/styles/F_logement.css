@@ -68,6 +68,9 @@
 }
 
 /* TAGS */
+.tag_content{
+    display: flex;
+}
 .tags{
     display: flex;
 }
@@ -87,6 +90,14 @@
     border-radius: 10px;
     background: #FF6060;
     margin: 0 10px 24px 0;
+}
+
+.star .orange_star{
+    color: #E3E3E3;
+}
+
+.star .grey_star{
+    color: #E3E3E3;
 }
 
 /* DROPDOWN */

@@ -3,6 +3,7 @@ import Carrousel from '../components/Carrousel';
 import Title from '../components/File_information';
 import Tag from '../components/Tag';
 import Footer from '../components/Footer';
+import DropdownOpen from '../components/Dropdown_open';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Carrousel />
       <Title />
       <Tag />
+      <DropdownOpen />
       <Footer />
     </div>
   );       
