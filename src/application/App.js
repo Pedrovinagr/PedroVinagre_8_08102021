@@ -1,12 +1,12 @@
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
-import Dropdown from '../components/Dropdown';
+import Dropdownlarge from '../components/Dropdownlarge';
 
 function App() {
   return (
     <div>
       <Banner />
-      <Dropdown />
+      <Dropdownlarge />
       <Footer />
     </div>
   );       
