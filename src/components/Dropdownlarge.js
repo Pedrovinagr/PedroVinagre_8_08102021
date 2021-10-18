@@ -3,7 +3,7 @@ import {Component} from 'react';
 import '../styles/F_logement.css';
 import vectorUp from '../assets/Vector_up.png';
 import vectorDown from '../assets/Vector_down.png';
-import DropdownList from '../unit/dropdownList';
+// import DropdownList from '../unit/dropdownList';
 
 function WarningBanner(props) {
     if (!props.warn) {
