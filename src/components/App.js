@@ -1,8 +1,8 @@
 import Banner from './Banner';
 import SweatbandPropos from './SweatbandPropos';
 import Footer from './Footer';
-import Dropdown from './Dropdown';
-import WarningBanner from './Dropdown';
+// import Dropdown from './Dropdown';
+// import WarningBanner from './Dropdown';
 
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
     <div>
       <Banner />
       <SweatbandPropos />
-      <WarningBanner description={'sdjfoizEHFÖIZJEFÖIHAZEÖIFHZÖIEJHFÖIZJEHFOI'} />
-      <Dropdown />
+      {/* <WarningBanner description={'sdjfoizEHFÖIZJEFÖIHAZEÖIFHZÖIEJHFÖIZJEHFOI'} />
+      <Dropdown /> */}
       <Footer />
     </div>
   );       

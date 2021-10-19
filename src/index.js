@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
-import App from './components/App';
+// import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 // import App from './application/App_logement';
 // import App from './application/App';
-// import App from './application/App_home';
+import App from './pages/home/App_home';
 // import App from './application/App_404';
 ReactDOM.render(
   <React.StrictMode>
