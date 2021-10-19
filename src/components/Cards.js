@@ -3,18 +3,15 @@ import '../styles/Cards.css';
 
 function Cards(){
     const data = [logements];
+    console.log(data)
+    const listItems = data.map((id, title) =>
+        <li key={id.toString()}> {title}</li>
+        );
 
     return(
         <div>
-            <div className='log-list'>
-				{data.map(({ id, title}) => (
-					<div>
-                        <div key={id.toString()} className='log-item'>
-			                {title}
-		                </div>
-                    </div>
-				))}
-			</div>
+            <ul className='log-list'> {listItems}
+			</ul>
 		</div>
 	)
 }
