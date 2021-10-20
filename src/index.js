@@ -5,7 +5,8 @@ import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 // import App from './application/App_logement';
 // import App from './application/App';
-import App from './pages/home/App_home';
+// import App from './pages/home/Home';
+import App from './pages/logements/Logement';
 // import App from './application/App_404';
 ReactDOM.render(
   <React.StrictMode>

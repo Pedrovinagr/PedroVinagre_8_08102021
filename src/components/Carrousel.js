@@ -3,16 +3,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import '../styles/F_logement.css';
 
-function Carrousel(props){
+function Carrousel(){
     const data = logements;
-    const picture = props.data.map((picture) => pictures)
-    console.log (picture)
 
     return (
     <Carousel>
         {data.map(pictures => (
-            <div key={pictures.id.toString()}>
-                <img src={pictures.cover} />
+            <div key={pictures.id}>
+                <img src={pictures.cover} alt="" />
             </div>
         ))}
     </Carousel>
