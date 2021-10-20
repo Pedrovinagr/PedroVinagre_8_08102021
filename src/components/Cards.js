@@ -2,10 +2,17 @@ import logements from '../Datas/logements.json'
 import '../styles/Cards.css';
 
 function Cards(){
-    const data = [logements];
+    const data = logements;
     console.log(data)
-    const listItems = data.map((id, title) =>
-        <li key={id.toString()}> {title}</li>
+    const listItems = data.map(({id, title, cover}) =>
+        <div className='card'>
+            <li key={id.toString()} className='img'> 
+                <img className='lmj-plant-item-cover' src={cover} alt={`${id} cover`} />
+            </li>
+            <li className='title'>
+                {title}
+            </li>
+        </div>
         );
 
     return(
