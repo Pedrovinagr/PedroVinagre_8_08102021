@@ -12,11 +12,11 @@ function Carrousel(){
     // console.log(dataCarousel)
     return (
     <Carousel>
-        {dataPicture.map(pictures=> (
-            <div key={pictures}>
-                <img src={pictures} alt="" />
+        {dataPicture.map((picture) =>
+            <div key={picture.id}>
+                <img src={picture.pictures} alt="" />
             </div>
-        ))}
+        )}
     </Carousel>
   )
 } 
