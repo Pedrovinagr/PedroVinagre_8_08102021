@@ -1,5 +1,5 @@
 import Banner from '../../components/Banner';
-import Carousel from '../../components/Carousel';
+import Slider from '../../components/Slider';
 // import Title from '../components/File_information';
 // import Tag from '../components/Tag';
 import Footer from '../../components/Footer';
@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Banner />
-      <Carousel />
+      <Slider />
       {/* <Title />
       <Tag />
       <DropdownOpen /> */}

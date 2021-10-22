@@ -3,25 +3,25 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import '../styles/F_logement.css';
 
-function Carrousel(){
+function slider(){
     const data = logements;
-    console.log(logements)
-    const dataPicture = data.find(pictures => pictures.id === "c67ab8a7")
-    // const dataCarousel = dataPicture.map(dataCarousel => (dataCarousel.pictures))
-    console.log(dataPicture)
-    // console.log(dataCarousel)
+    // const dataPicture = data.find(pictures => pictures.id === "c67ab8a7")
+    // const imgCarousel =;
+
     return (
     <Carousel>
-        {dataPicture.map((picture) =>
+        <div>
+          {data.map(picture => (
             <div key={picture.id}>
-                <img src={picture.pictures} alt="" />
+              <img src={picture.cover} alt="" />
             </div>
-        )}
+          ))}
+        </div>
     </Carousel>
   )
 } 
 
-export default Carrousel
+export default slider
 
   // const pages = '1/4'
     // return (
