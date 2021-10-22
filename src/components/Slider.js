@@ -4,19 +4,22 @@ import { Carousel } from 'react-responsive-carousel';
 import '../styles/F_logement.css';
 
 function slider(){
-    const data = logements;
-    // const dataPicture = data.find(pictures => pictures.id === "c67ab8a7")
+    const datas = logements;
+    const datasPicture = datas.find(pictures => pictures.id === "c67ab8a7")
+    const data = [datasPicture]
+    const picture = data.map(({pictures}) => pictures)
+    const pictures = picture.forEach(element => { console.log(element) });
+    console.log(pictures)
+
     // const imgCarousel =;
 
     return (
     <Carousel>
-        <div>
-          {data.map(picture => (
-            <div key={picture.id}>
-              <img src={picture.cover} alt="" />
-            </div>
-          ))}
+      {picture.map(contents => (
+        <div key={contents.id}>
+          <img src={contents} alt="" />
         </div>
+      ))} 
     </Carousel>
   )
 } 
