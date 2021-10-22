@@ -5,12 +5,16 @@ import '../styles/F_logement.css';
 
 function Carrousel(){
     const data = logements;
-
+    console.log(logements)
+    const dataPicture = data.find(pictures => pictures.id === "c67ab8a7")
+    // const dataCarousel = dataPicture.map(dataCarousel => (dataCarousel.pictures))
+    console.log(dataPicture)
+    // console.log(dataCarousel)
     return (
     <Carousel>
-        {data.map(pictures => (
-            <div key={pictures.id}>
-                <img src={pictures.cover} alt="" />
+        {dataPicture.map(pictures=> (
+            <div key={pictures}>
+                <img src={pictures} alt="" />
             </div>
         ))}
     </Carousel>
