@@ -1,20 +1,20 @@
-// import Banner from '../../components/Banner';
+import Banner from '../../components/Banner';
 // import Slider from '../../components/Slider';
 // import Title from '../components/File_information';
 // import Tag from '../components/Tag';
-import Footer from '../../components/Footer';
+// import Footer from '../../components/Footer';
 // import DropdownOpen from '../components/Dropdown_open';
 
 
 function App() {
   return (
     <div>
-      {/* <Banner /> */}
+      <Banner />
       {/* <Slider /> */}
       {/* <Title />
       <Tag />
       <DropdownOpen /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );       
 }
