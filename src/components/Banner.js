@@ -1,18 +1,22 @@
-import { Component } from 'react';
-import LOGO from '../assets/LOGO_Banner.png';
+import { React } from 'React';
+// import LOGO from '../assets/LOGO_Banner.png';
 import '../styles/Banner.css';
 
-class Banner extends Component(){
+class Banner extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {NavHome: 'Accueil', NavNews: 'A propos' }
+    }
 
     render(){
         return (
             <div className='heater'>
-                <div>
+                {/* <div>
                     <img src={LOGO} alt='kasa' className='logo' />
-                </div>
+                </div> */}
                 <div className='nav_container'>
-                    <a href className="nav home"><span>Accueil</span></a>
-                    <a href className="nav news"><span>A propos</span></a>
+                    <p href className="nav home"><span>{this.state.NavHome}</span></p>
+                    <p className="nav news"><span>{this.state.NavNews}</span></p>
                 </div>
             </div>
         );
