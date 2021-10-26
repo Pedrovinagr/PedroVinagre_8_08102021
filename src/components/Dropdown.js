@@ -1,57 +1,80 @@
 // import React from 'react';
-import {Component} from 'react';
+import React from 'react';
 import '../styles/F_logement.css';
 import vectorUp from '../assets/Vector_up.png';
 import vectorDown from '../assets/Vector_down.png';
 
-function WarningBanner(props) {
-
-    const description = props.description
-    
-    if (!props.warn) {
-      return null;
-    }
+function ExpandDropdown(props) {
   
-    return ( 
-        <div className='content'>
-            <p className='text_content'>{description}</p> 
-        </div>
+  const textContent = props.content;
+  // const textContent = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
+
+  if (!props.warn) {
+    return null;
+  }
+
+  return ( 
+      <div className='content'>
+          <p className='text_content'>{textContent}</p> 
+      </div>
+  );
+}
+
+// class ExpandDropdown extends React.Component {
+
+//   constructor(props) {
+//     super(props);
+//     this.state = {contents: this.props.content}
+//     this.state = {warn: this.props.warn}
+//   }
+  
+//   render() {
+//     const warn = {}
+//     if (!props.warn) {
+//       return null;
+//     }
+    
+//     return ( 
+//         <div className='content'>
+//             <p className='text_content'>{this.state.contents}</p> 
+//         </div>
+//     );
+//   }
+// }
+class Dropdown extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {showWarning: false};
+    this.handleToggleClick = this.handleToggleClick.bind(this);
+    this.state = {titles: this.props.title}
+  }
+
+  handleToggleClick() {
+    this.setState(state => ({
+      showWarning: !state.showWarning
+    }));
+  }
+
+  render() {
+      const Up = <img src={vectorUp} alt='kasa' className='vector_up' />
+      const Down = <img src={vectorDown} alt='kasa' className='vector_down' />
+
+    return (
+      <div className='dropdown'>
+          <div className='dropdowns_up'>
+              <p className='title_dropdown'>{this.state.titles}</p>
+              <div className='btn'>
+                  <button onClick={this.handleToggleClick} className='dropdown_btn'>
+                      {this.state.showWarning ? Up : Down }
+                  </button>
+              </div>
+          </div>
+          <div>
+              <ExpandDropdown warn={this.state.showWarning} />
+          </div>
+      </div>
     );
   }
-  
-  class Dropdown extends Component {
-    constructor(props) {
-      super(props);
-      this.state = {showWarning: false};
-      this.handleToggleClick = this.handleToggleClick.bind(this);
-    }
-  
-    handleToggleClick() {
-      this.setState(state => ({
-        showWarning: !state.showWarning
-      }));
-    }
-  
-    render() {
-        const Up = <img src={vectorUp} alt='kasa' className='vector_up' />
-        const Down = <img src={vectorDown} alt='kasa' className='vector_down' />
-        const title = 'Description'
-      return (
-        <div className='dropdown'>
-            <div className='dropdowns_up'>
-                <p className='title_dropdown'>{title}</p>
-                <div className='btn'>
-                    <button onClick={this.handleToggleClick} className='dropdown_btn'>
-                        {this.state.showWarning ? Up : Down }
-                    </button>
-                </div>
-            </div>
-            <div>
-                <WarningBanner warn={this.state.showWarning} />
-            </div>
-        </div>
-      );
-    }
-  }
+}
 
-  export default Dropdown
+export default Dropdown
