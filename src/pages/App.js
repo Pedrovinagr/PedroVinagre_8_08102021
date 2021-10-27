@@ -8,7 +8,8 @@ class App extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {logement: logements.find(pictures => pictures.id ("c67ab8a7"))}
+        this.state = {logement: logements.find((picture) => picture.id ("c67ab8a7"))}
+        console.log(this.state.logement)
     }
 
     render() {
