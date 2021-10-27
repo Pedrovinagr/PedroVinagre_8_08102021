@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner';
-import logements from '../data/logements.json'
+import Logements from '../data/logements.json'
 import Cards from '../components/Cards';
 import Footer from '../components/Footer';
 
@@ -8,8 +8,7 @@ class App extends React.Component {
 
     constructeur(props) {
         super(props);
-        // eslint-disable-next-line react/no-direct-mutation-state
-        this.state = {listItems: logements};
+        this.setState({listItems: Logements});
     }
 
     render() {

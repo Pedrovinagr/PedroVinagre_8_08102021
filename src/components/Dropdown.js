@@ -4,21 +4,21 @@ import '../styles/F_logement.css';
 import vectorUp from '../assets/Vector_up.png';
 import vectorDown from '../assets/Vector_down.png';
 
-function ExpandDropdown(props) {
+// function ExpandDropdown(props) {
   
-  const textContent = props.content;
-  // const textContent = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
+//   // const textContent = props.content;
+//   // const textContent = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
 
-  if (!props.warn) {
-    return null;
-  }
+//   if (!props.warn) {
+//     return null;
+//   }
 
-  return ( 
-      <div className='content'>
-          <p className='text_content'>{textContent}</p> 
-      </div>
-  );
-}
+//   return ( 
+//       <div className='content'>
+//           <p>{this.props.content}</p>
+//       </div>
+//   );
+// }
 
 // class ExpandDropdown extends React.Component {
 
@@ -46,23 +46,41 @@ class Dropdown extends React.Component {
     super(props);
     this.state = {showWarning: false};
     this.handleToggleClick = this.handleToggleClick.bind(this);
+    this.expandDropdown = this.expandDropdown.bind(this);
     this.state = {titles: this.props.title}
   }
 
   handleToggleClick() {
-    this.setState(state => ({
+    this.setState((state) => ({
       showWarning: !state.showWarning
     }));
   }
 
+  expandDropdown(props) {
+  
+    // const textContent = props.content;
+    // const textContent = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
+  
+    if (!props.warn) {
+      return null;
+    }
+  
+    return ( 
+        <div className='content'>
+            <p>{this.props.content}</p>
+        </div>
+    );
+  }
+
   render() {
-      const Up = <img src={vectorUp} alt='kasa' className='vector_up' />
-      const Down = <img src={vectorDown} alt='kasa' className='vector_down' />
+    
+    const Up = <img src={vectorUp} alt='kasa' className='vector_up' />
+    const Down = <img src={vectorDown} alt='kasa' className='vector_down' />
 
     return (
       <div className='dropdown'>
           <div className='dropdowns_up'>
-              <p className='title_dropdown'>{this.state.titles}</p>
+              <p className='title_dropdown'>{this.props.title}</p>
               <div className='btn'>
                   <button onClick={this.handleToggleClick} className='dropdown_btn'>
                       {this.state.showWarning ? Up : Down }
@@ -70,7 +88,8 @@ class Dropdown extends React.Component {
               </div>
           </div>
           <div>
-              <ExpandDropdown warn={this.state.showWarning} />
+              <expandDropdown warn={this.state.showWarning} />
+              {/* <p>{this.props.content}</p> */}
           </div>
       </div>
     );
