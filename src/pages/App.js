@@ -8,14 +8,14 @@ class App extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {logement: logements.find(pictures => pictures.id === this.props.match.id("c67ab8a7"))}
+        this.state = {logement: logements.find(pictures => pictures.id ("c67ab8a7"))}
     }
 
     render() {
         return (
             <div>
                 < Banner />
-                <Carousel picture = {this.state.logement.pictures} />
+                <Carousel picture = {this.state.logement.cover} />
                 < Footer />
             </div>
         );
