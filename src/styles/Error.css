@@ -19,3 +19,10 @@
 .link_home{
     margin-bottom: 159px;
 }
+
+.return_home{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+}
