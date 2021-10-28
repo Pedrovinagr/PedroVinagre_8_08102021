@@ -1,15 +1,7 @@
 
 .body{
-    margin-top: 63px;
+    margin: 63px 0 319px 0;
     position: relative;
-}
-
-.picture_propos{
-    position: absolute;
-    border-radius: 25px;
-    width: 100%;
-    height: 223px;
-    object-fit: cover;
 }
 
 .picture{
@@ -17,25 +9,22 @@
     border-radius: 25px;
     width: 100%;
     height: 223px;
-    object-fit: cover;
 }
 
 .mask{
+    position: absolute;
     display: table;
     width: 100%;
     height: 223px;
     text-align: center;
+    border-radius: 25px;
+    background: black;
+    opacity: 0.3;
 }
 
 .headline{
     display: table-cell;
     vertical-align: middle;
-    background: black;
-    border-radius: 25px;
     color: #FFFFFF;
-    opacity: 0.3;
-}
-
-.title_propos{
-    color: rgb(0, 0, 0);
+    
 }

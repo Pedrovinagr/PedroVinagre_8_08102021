@@ -47,7 +47,7 @@ class Dropdown extends React.Component {
     this.state = {showWarning: false};
     this.handleToggleClick = this.handleToggleClick.bind(this);
     this.expandDropdown = this.expandDropdown.bind(this);
-    this.state = {titles: this.props.title}
+    this.state = {titles: this.props.title};
   }
 
   handleToggleClick() {
