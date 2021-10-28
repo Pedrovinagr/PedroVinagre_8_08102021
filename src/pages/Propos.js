@@ -1,11 +1,11 @@
 import React from 'react';
 import Picture from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg';
-import Banner from '../components/Banner';
-import Headband from '../components/Headband'
-import Dropdown from '../components/Dropdown';
-import Footer from '../components/Footer';
 import '../styles/Propos.css';
 
+import Banner from '../components/Banner';
+import Headband from '../components/Headband';
+import Dropdown from '../components/Dropdown';
+import Footer from '../components/Footer';
 class App extends React.Component {
 
     render() {
