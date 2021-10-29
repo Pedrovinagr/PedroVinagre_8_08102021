@@ -1,0 +1,11 @@
+.log-list{
+    display: flex;
+    flex-direction: auto;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    margin: 43px 0 43px 0;
+    width: 100%;
+    background: #F7F7F7;;
+    border-radius: 25px;
+}

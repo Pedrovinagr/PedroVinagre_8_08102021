@@ -1,18 +1,14 @@
 import React from 'react';
-import Logements from '../data/logements.json';
 import Picture from '../assets/IMG.jpg';
 
 import Banner from '../components/Banner';
 import Headband from '../components/Headband';
 import Cards from '../components/Cards';
 import Footer from '../components/Footer';
-class App extends React.Component {
+import '../styles/Home.css'
 
-    constructeur(props) {
-        super(props);
-        this.State = {listItems: Logements};
-        console.log(this.state.listItems)
-    }
+const Logements = require("../Data/logements.json")
+class App extends React.Component {
     
     render() {
         
@@ -20,8 +16,7 @@ class App extends React.Component {
             <div>
                 < Banner />
                 < Headband picture = {Picture} headline = "Chez vous, partout et ailleurs" />
-                {this.state.listItems.map((item) => < Cards card= {item} />)}
-                {/* < Cards /> */}
+                <div className='log-list'>{Logements.map((item) => < Cards card= {item} />)}</div>
                 < Footer />
             </div>
         );

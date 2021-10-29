@@ -1,18 +1,7 @@
-.log-list{
-    display: flex;
-    flex-direction: auto;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-around;
-    margin: 43px 0 43px 0;
-    width: 100%;
-    background: #F7F7F7;;
-    border-radius: 25px;
-    padding: 0;
-}
+
 
 .card{
-    display: table;
+    position: relative;
     width: 340px;
     height: 340px;
     background: #FF6060;
@@ -22,18 +11,26 @@
     cursor: pointer;
 }
 
-img {
+ul{
+   list-style: none; 
+}
+
+.log_cover {
+    position: absolute;
+    left: 0;
+    top: 0;
     border-radius: 10px 10px 0 0;
     width: 340px;
     height: 272px;
-    list-style: none;
     object-fit: cover;
 }
 
 .title{
+    position: absolute;
+    left: 20px;
+    top: 282px;
     color: #FFFFFF;
     font-size: 18px;
-    margin: 10px 20px;
     list-style: none;
 }
 
