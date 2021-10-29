@@ -5,9 +5,9 @@ import Banner from '../components/Banner';
 import Headband from '../components/Headband';
 import Cards from '../components/Cards';
 import Footer from '../components/Footer';
-import '../styles/Home.css'
+import '../styles/Home.css';
 
-const Logements = require("../Data/logements.json")
+const Logements = require("../Data/logements.json");
 class App extends React.Component {
     
     render() {

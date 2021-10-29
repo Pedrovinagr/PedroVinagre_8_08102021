@@ -1,34 +1,3 @@
-// import React from 'react';
-// import logements from '../Data/logements.json'
-// import '../styles/Cards.css';
-
-// class Cards extends React.Component {
-
-//     render(){
-
-//         const data = logements;
-//         const listItems = data.map(({id, title, cover}) =>
-//             <div className='card'>
-//                 <li key={id.toString()} className='img'> 
-//                     <img className='lmj-plant-item-cover' src={cover} alt={`${id} cover`} />
-//                 </li>
-//                 <li className='title'>
-//                     {title}
-//                 </li>
-//             </div>
-//             );
-
-//         return(
-//             <div>
-//                 <ul className='log-list'> {listItems}
-//                 </ul>
-//             </div>
-//         );
-//     }
-// }
-
-// export default Cards
-
 import React from 'react';
 import '../styles/Cards.css';
 
