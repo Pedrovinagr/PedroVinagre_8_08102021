@@ -26,8 +26,8 @@ class App extends React.Component {
                 < Banner />
                 {/* <Carousel picture = {this.state.logement.cover} /> */}
                 <div className='bloc_dropdown'>
-                    < Dropdown title = {this.props.logement.title} content = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>
-                    < Dropdown title = "Fiabilité" content = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>
+                    < Dropdown title = "title" content = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>
+                    < Dropdown title = "title" content = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>
                 </div>
                 < Footer />
             </div>
