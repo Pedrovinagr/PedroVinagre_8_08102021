@@ -3,21 +3,6 @@ import React from 'react';
 import '../styles/F_logement.css';
 import vectorUp from '../assets/Vector_up.png';
 import vectorDown from '../assets/Vector_down.png';
-
-// function ExpandDropdown(props) {
-//   if (!props.warn) {
-//     return null;
-//   }
-
-//   const text = this.props.content;
-//   console.log(text)
-  
-//   return ( 
-//       <div className='content'>
-//           <p className='text_content'>{text}.</p> 
-//       </div>
-//   );
-// }
 class Dropdown extends React.Component {
   constructor(props) {
     super(props);
@@ -35,6 +20,11 @@ class Dropdown extends React.Component {
     
     const Up = <img src={vectorUp} alt='kasa' className='vector_up' />
     const Down = <img src={vectorDown} alt='kasa' className='vector_down' />
+    const DisplayText =
+      <div className='content'>
+        <p className='text_content'>{this.props.content}.</p> 
+      </div>
+    const HiddenText = ""
 
     return (
       <div className='dropdown'>
@@ -47,11 +37,7 @@ class Dropdown extends React.Component {
               </div>
           </div>
           <div>
-              {/* <ExpandDropdown warn={this.state.showWarning} />
-              <p>{this.props.content}</p> */}
-              <div className='content'>
-                <p className='text_content'>{this.props.content}.</p> 
-              </div>
+              {this.state.showWarning ? DisplayText : HiddenText }
           </div>
       </div>
     );
