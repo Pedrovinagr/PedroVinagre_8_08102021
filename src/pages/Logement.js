@@ -3,6 +3,7 @@ import '../styles/Logement.css'
 
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
+import HousingInfo from '../components/HousingInfo';
 import Dropdown from '../components/Dropdown'
 import Footer from '../components/Footer';
 
@@ -15,16 +16,20 @@ class App extends React.Component {
     // }
 
     render() {
-        const Data = Logements.find(pictures => pictures.id === "c67ab8a7");
+        const Data = Logements.find(pictures => pictures.id === "b9123946");
         const PictureData = Data.pictures;
+        const ContentDescrip = Data.description.valueOf()
+        const ContentEquip = Data.equipments.map((content) => <li>{content}</li> )
+
 
         return (
             <div>
                 < Banner />
                 <Carousel picture = {PictureData} />
+                <HousingInfo datas = {Data} />
                 <div className='bloc_dropdown'>
-                    < Dropdown title = "title" content = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>
-                    < Dropdown title = "title" content = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>
+                    < Dropdown title = "Description" content = {ContentDescrip}/>
+                    < Dropdown title = "Equipements" content = {<ul> {ContentEquip} </ul>}/>
                 </div>
                 < Footer />
             </div>

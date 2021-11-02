@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/Carousel.css'
-// import React, {useState} from "react";
+
 import ChevronRight from '../assets/ChevronRight.png'
 import ChrevronLeft from '../assets/ChevronLeft.png'
 class Carousel extends React.Component {
