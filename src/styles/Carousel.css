@@ -32,3 +32,9 @@
     object-fit: cover;
 
 }
+
+.pages{
+    position: absolute;
+    bottom: 20px;
+    color: #FFFFFF;
+}

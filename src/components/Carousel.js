@@ -12,6 +12,7 @@ class Carousel extends React.Component {
             picturesArray: this.props.picture,
             pictures: this.props.picture[0]};
         }
+
     render() {
         const nextSlide = () => {
             if(this.state.picturesIndex < this.state.picturesArray.length) {
@@ -36,11 +37,14 @@ class Carousel extends React.Component {
         }
         
         return(
+            <>
             <section className='carousel'>
                 <img src={ChrevronLeft} alt='left-Arrow' className='Chrevron left' onClick={prevSlide} />
                 <img src={ChevronRight} alt='right-Arrow' className='Chrevron right' onClick={nextSlide} />
-                {this.props.picture.map((pictures, index) => <img key={index} src={pictures} alt='kasa' className='house_image' />)}
+                <img src={this.state.pictures} alt='kasa' className='house_image' />
+                <p className= 'pages'>{this.state.picturesIndex.valueOf()}/{this.state.picturesArray.length}</p>
             </section>
+            </>
         )
     }
 }
@@ -64,3 +68,14 @@ export default Carousel;
 //         if(!Array.isArray(this.props.picture) || this.props.picture.length <= 0) {
 //             return null;
 //         }
+
+// return(
+//     <>
+//     <section className='carousel'>
+//         <img src={ChrevronLeft} alt='left-Arrow' className='Chrevron left' onClick={prevSlide} />
+//         <img src={ChevronRight} alt='right-Arrow' className='Chrevron right' onClick={nextSlide} />
+//         {this.props.picture.map((pictures, index) => <img key={index} src={pictures} alt='kasa' className='house_image' />)}
+//         <p className= 'pages'>1/4</p>
+//     </section>
+//     </>
+// )
