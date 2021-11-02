@@ -26,7 +26,7 @@ class App extends React.Component {
             <div>
                 < Banner />
                 <Carousel picture = {PictureData} />
-                <HousingInfo datas = {Data} />
+                <HousingInfo datas = {Data} className='housing_info'/>
                 <div className='bloc_dropdown'>
                     < Dropdown title = "Description" content = {ContentDescrip}/>
                     < Dropdown title = "Equipements" content = {<ul> {ContentEquip} </ul>}/>
