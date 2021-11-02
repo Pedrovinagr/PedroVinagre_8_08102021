@@ -15,7 +15,7 @@ class Carousel extends React.Component {
     render() {
         const nextSlide = () => {
             if(this.state.picturesIndex < this.state.picturesArray.length) {
-                this.setState({picturesIndex : picturesIndex + 1})
+                this.setState({picturesIndex: this.state.picturesIndex + 1})
             }
             else {
                 this.setState({picturesIndex: 0})
@@ -26,14 +26,18 @@ class Carousel extends React.Component {
 
         const prevSlide = () => {
             if (this.state.picturesIndex > 0) {
-                this.setState({picturesIndex : picturesIndex -1});
-                
+                this.setState({picturesIndex: this.state.picturesIndex -1});
             }
+            else {
+                this.setState({picturesIndex: this.state.picturesArray.length -1});
+            }
+
+            this.setState({pictures: this.state.picturesArray[this.state.picturesIndex]});
         }
         
         return(
             <section className='carousel'>
-                <img src={ChrevronLeft} alt='left-Arrow' className='Chrevron left' />
+                <img src={ChrevronLeft} alt='left-Arrow' className='Chrevron left' onClick={prevSlide} />
                 <img src={ChevronRight} alt='right-Arrow' className='Chrevron right' onClick={nextSlide} />
                 {this.props.picture.map((pictures, index) => <img key={index} src={pictures} alt='kasa' className='house_image' />)}
             </section>
