@@ -1,5 +1,7 @@
 import React from "react";
-import '../styles/Logement.css'
+import '../styles/Logement.css';
+
+import Star from'../components/Star';
 
 class HousingInfo extends React.Component {
 
@@ -17,6 +19,7 @@ class HousingInfo extends React.Component {
                     <img src= {this.props.datas.host.picture} alt="identity" className='Identity'/>
                 </div>
                 <ul className="tags"> {ListTags} </ul>
+                <Star />
             </div>
         );
     }
