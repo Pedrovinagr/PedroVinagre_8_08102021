@@ -84,7 +84,8 @@
 li{
     list-style: none;
 }
-/* .star{
+.star{
     position: absolute;
     right: 0;
-} */
+    bottom: 24px;
+}

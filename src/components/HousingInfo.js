@@ -1,12 +1,13 @@
 import React from "react";
 import '../styles/Logement.css';
 
-import Star from'../components/Star';
+import Rating from'./Rating';
 
 class HousingInfo extends React.Component {
 
     render() {
         const ListTags = this.props.datas.tags.map((tags) => <li className='tag'>{tags}</li> )
+        const RatingStar = this.props.datas.rating
 
         return (
             <div className='info'>
@@ -19,7 +20,7 @@ class HousingInfo extends React.Component {
                     <img src= {this.props.datas.host.picture} alt="identity" className='Identity'/>
                 </div>
                 <ul className="tags"> {ListTags} </ul>
-                <Star />
+                <Rating star={RatingStar}/>
             </div>
         );
     }
