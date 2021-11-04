@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LogoBanner from '../assets/LogoBanner.png';
 import '../styles/Banner.css';
 
@@ -10,8 +11,8 @@ class Banner extends React.Component {
                 <img src={LogoBanner} alt='kasa' className='logo' />
 
                 <div className='nav_container'>
-                    <a href='/' className="nav home"><span>Accueil</span></a>
-                    <a href='/' className="nav news"><span>A propos</span></a>
+                    <Link to='/' className="nav home"><span>Accueil</span></Link>
+                    <Link to='/Propos' className="nav news"><span>A propos</span></Link>
                 </div>
 
             </div>

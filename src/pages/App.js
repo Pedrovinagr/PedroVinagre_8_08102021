@@ -1,13 +1,24 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom'
 import Banner from '../components/Banner';
-import Footer from '../components/Footer';
+
+import Home from './Home';
+import Propos from './Propos'
+
 class App extends React.Component {
 
     render() {
         return (
             <div>
-                < Banner />
-                < Footer />
+                <Switch>
+                    <Banner />
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route exact path="/Propos">
+                        <Propos />
+                    </Route>
+                </Switch>
             </div>
         );
     }

@@ -6,7 +6,7 @@ import Banner from '../components/Banner';
 import Headband from '../components/Headband';
 import Dropdown from '../components/Dropdown';
 import Footer from '../components/Footer';
-class App extends React.Component {
+class Propos extends React.Component {
 
     render() {
         return (
@@ -26,4 +26,4 @@ class App extends React.Component {
     
 }
 
-export default App;
+export default Propos;

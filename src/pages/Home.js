@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import '../styles/Home.css';
 
 const Logements = require("../Data/logements.json");
-class App extends React.Component {
+class Home extends React.Component {
     
     render() {
         
@@ -24,4 +24,4 @@ class App extends React.Component {
     
 }
 
-export default App;
+export default Home;
