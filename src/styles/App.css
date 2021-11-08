@@ -20,5 +20,8 @@
   .picture{
     object-fit: cover;
   }
+  .dropdown_propos{
+    width: 100%;
+}
 }
 
