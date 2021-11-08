@@ -1,6 +1,7 @@
 import '../styles/Home.css'
 import '../styles/Cards.css'
 import '../styles/Logement.css'
+import '../styles/App.css'
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom'

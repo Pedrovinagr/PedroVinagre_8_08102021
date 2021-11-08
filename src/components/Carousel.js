@@ -31,7 +31,7 @@ class Carousel extends React.Component {
                 this.setState({picturesIndex: this.state.picturesIndex -1});
             }
             else {
-                this.setState({picturesIndex: this.state.picturesArray.length -1});
+                this.setState({picturesIndex: this.state.picturesArray.length});
             }
 
             this.setState({pictures: this.state.picturesArray[this.state.picturesIndex]});
