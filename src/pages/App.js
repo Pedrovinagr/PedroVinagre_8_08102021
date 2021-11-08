@@ -5,8 +5,6 @@ import '../styles/Logement.css'
 import React from 'react';
 import { Switch, Route } from 'react-router-dom'
 
-
-
 import Home from './Home';
 import Propos from './Propos'
 import Logement from './Logement'

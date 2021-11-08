@@ -1,12 +1,14 @@
 import React from 'react';
-import Picture from '../assets/IMG.jpg';
 import { Link } from 'react-router-dom';
 
 import Banner from '../components/Banner';
 import Headband from '../components/Headband';
 import Cards from '../components/Cards';
 import Footer from '../components/Footer';
+
 import '../styles/Home.css';
+
+import Picture from '../assets/IMG.jpg';
 
 const Logements = require("../Data/logements.json");
 class Home extends React.Component {
@@ -25,7 +27,6 @@ class Home extends React.Component {
             </div>
         );
     }
-    
 }
 
 export default Home;

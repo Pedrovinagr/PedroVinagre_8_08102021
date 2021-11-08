@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Logement.css'
 
 import Banner from '../components/Banner';
 import Carousel from '../components/Carousel';
@@ -7,7 +6,8 @@ import HousingInfo from '../components/HousingInfo';
 import Dropdown from '../components/Dropdown'
 import Footer from '../components/Footer';
 
-// import logements from '../Data/logements.json'
+import '../styles/Logement.css';
+
 const Logements = require("../Data/logements.json");
 class Logement extends React.Component {
     
@@ -35,7 +35,6 @@ class Logement extends React.Component {
             </div>
         );
     }
-    
 }
 
 export default Logement;

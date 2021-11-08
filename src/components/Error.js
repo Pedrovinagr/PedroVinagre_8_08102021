@@ -1,4 +1,5 @@
 import React from 'react';
+
 import '../styles/Error.css';
 
 class Error extends React.Component {
@@ -12,7 +13,6 @@ class Error extends React.Component {
                     <a href="/" className="return_home"><span>Retourner sur la plage d'accueil</span></a>
                 </div>
             </div>
-            
         );
     }
 } 

@@ -1,11 +1,14 @@
 import React from 'react';
-import Picture from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg';
-import '../styles/Propos.css';
 
 import Banner from '../components/Banner';
 import Headband from '../components/Headband';
 import Dropdown from '../components/Dropdown';
 import Footer from '../components/Footer';
+
+import '../styles/Propos.css';
+
+import Picture from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg';
+
 class Propos extends React.Component {
 
     render() {
@@ -22,8 +25,7 @@ class Propos extends React.Component {
                 < Footer />
             </div>
         );
-    }
-    
+    } 
 }
 
 export default Propos;

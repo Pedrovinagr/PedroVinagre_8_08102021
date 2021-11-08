@@ -1,4 +1,5 @@
 import React from 'react';
+
 import '../styles/Headband.css';
 
 class Sweatband extends React.Component {
@@ -12,7 +13,6 @@ class Sweatband extends React.Component {
                     <h1 className='headline'>{this.props.headline}</h1>
                 </div>
             </div>
-            
         );
     }
 } 

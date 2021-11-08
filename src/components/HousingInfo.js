@@ -1,4 +1,5 @@
 import React from "react";
+
 import '../styles/Logement.css';
 
 import Rating from'./Rating';

@@ -1,4 +1,5 @@
 import React from "react";
+
 import "../styles/Logement.css";
 
 import OrangeStar from "../assets/OrangeStar.png";
@@ -29,13 +30,3 @@ class Rating extends React.Component {
 }
 
 export default Rating;
-
-// ({ scaleValue, careType }) {
-// 	
-
-// 	return (
-// 		<div>
-// 			
-// 		</div>
-// 	)
-// }

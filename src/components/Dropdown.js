@@ -1,5 +1,7 @@
 import React from 'react';
+
 import '../styles/Dropdown.css';
+
 import vectorUp from '../assets/Vector_up.png';
 import vectorDown from '../assets/Vector_down.png';
 class Dropdown extends React.Component {
