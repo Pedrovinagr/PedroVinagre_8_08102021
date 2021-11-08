@@ -8,15 +8,15 @@ class Carousel extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            picturesIndex: 0,
+            picturesIndex: 1,
             picturesArray: this.props.picture,
             pictures: this.props.picture[0]};
         }
 
     render() {
         const nextSlide = () => {
-            if(this.state.picturesIndex < this.state.picturesArray.length) {
-                this.setState({picturesIndex: this.state.picturesIndex + 1})
+            if(this.state.picturesIndex < this.state.picturesArray.length -1) {
+                this.setState({picturesIndex: this.state.picturesIndex +1})
             }
             else {
                 this.setState({picturesIndex: 0})

@@ -12,7 +12,7 @@ class HousingInfo extends React.Component {
         return (
             <div className='info'>
                 <div className='file_inf'>
-                    <p className='title'>{this.props.datas.title}</p>
+                    <p className='title_inf'>{this.props.datas.title}</p>
                     <p className="locale">{this.props.datas.location}</p>
                 </div>
                 <div className='name_file'>
