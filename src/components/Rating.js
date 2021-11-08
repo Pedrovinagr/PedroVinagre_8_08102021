@@ -21,7 +21,7 @@ class Rating extends React.Component {
             <div className='star'>
             {range.map((rangeElem) =>
 				this.state.Rating >= rangeElem ? (<span key={rangeElem.toString()}>{NumberStar}</span>
-				) : null
+				) : (<img src={GreyStar} alt='sun-icon' />)
 			)}
             </div>
         )

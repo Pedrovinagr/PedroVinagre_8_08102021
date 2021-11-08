@@ -9,24 +9,24 @@ import Footer from '../components/Footer';
 
 // import logements from '../Data/logements.json'
 const Logements = require("../Data/logements.json");
-class App extends React.Component {
-    // constructor(props){
-    //     super(props)
-    //     this.state = {logement: Logements.find(pictures => pictures.id === this.props.match.id('c67ab8a7'))}
-    // }
+class Logement extends React.Component {
+    
+    constructor(props){
+        super(props)
+        this.logementId = this.props.match.params.id;
+        this.logement = Logements.find(item => item.id === this.logementId);
+    }
 
     render() {
-        const Data = Logements.find(pictures => pictures.id === "0979876d");
-        const PictureData = Data.pictures;
-        const ContentDescrip = Data.description.valueOf()
-        const ContentEquip = Data.equipments.map((content) => <li>{content}</li> )
-
+        const PictureData = this.logement.pictures;
+        const ContentDescrip = this.logement.description.valueOf()
+        const ContentEquip = this.logement.equipments.map((content) => <li>{content}</li> )
 
         return (
             <div>
                 < Banner />
                 <Carousel picture = {PictureData} />
-                <HousingInfo datas = {Data} className='housing_info'/>
+                <HousingInfo datas = {this.logement} className='housing_info'/>
                 <div className='bloc_dropdown'>
                     < Dropdown title = "Description" content = {ContentDescrip}/>
                     < Dropdown title = "Equipements" content = {<ul> {ContentEquip} </ul>}/>
@@ -38,4 +38,4 @@ class App extends React.Component {
     
 }
 
-export default App;
+export default Logement;

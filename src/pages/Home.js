@@ -1,5 +1,6 @@
 import React from 'react';
 import Picture from '../assets/IMG.jpg';
+import { Link } from 'react-router-dom';
 
 import Banner from '../components/Banner';
 import Headband from '../components/Headband';
@@ -16,7 +17,10 @@ class Home extends React.Component {
             <div>
                 < Banner />
                 < Headband picture = {Picture} headline = "Chez vous, partout et ailleurs" />
-                <div className='log-list'>{Logements.map((item) => < Cards card= {item} />)}</div>
+                <div className='log-list'>{Logements.map((item) => 
+                <Link to={`/logement/${item.id}`}>
+                    <Cards card= {item} /> </Link>)}
+                </div>
                 < Footer />
             </div>
         );
