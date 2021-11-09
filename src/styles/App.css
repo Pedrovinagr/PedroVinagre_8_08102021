@@ -1,6 +1,9 @@
 @media (max-width: 740px) {
   html{
-    margin: 0;
+    margin: 20px 50px;
+  }
+  body{
+    margin: auto;
   }
   .headline{
       display: table-cell;
@@ -9,11 +12,9 @@
       font-size: 32px;
       
   }
-
   .nav{
     font-size: 12px;
   }
-
   .copyright{
     font-size: 12px;
   }
@@ -22,6 +23,34 @@
   }
   .dropdown_propos{
     width: 100%;
-}
+  }
+  .title_inf{
+    font-size: 18px;
+  }
+  .locale{
+    font-size: 14px;
+  }
+  .tags{
+    top: 70px;
+  }
+  .tag{
+    
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  .star{
+    bottom: 0;
+    left: 0;
+  }
+  .name_file{
+    bottom: 0;
+  }
+  .dropdowns_up{
+    display: none; 
+  }
+  .dropdown{
+    
+    font-size: 14px;
+  }
 }
 
