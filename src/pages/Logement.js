@@ -17,7 +17,7 @@ class Logement extends React.Component {
         this.logement = Logements.find(item => item.id === this.logementId);
     }
 
-    componentDidUnmount() {
+    componentWillMount() {
         if(this.logement === null || this.logement === undefined) {
             window.location = "/error";
         }
