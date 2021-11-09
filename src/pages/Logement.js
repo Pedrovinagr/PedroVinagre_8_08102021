@@ -17,10 +17,9 @@ class Logement extends React.Component {
         this.logement = Logements.find(item => item.id === this.logementId);
     }
 
-    componentWillUnmount() {
+    componentDidUnmount() {
         if(this.logement === null || this.logement === undefined) {
             window.location = "/error";
-            
         }
     }
 
@@ -28,7 +27,7 @@ class Logement extends React.Component {
         const PictureData = this.logement.pictures;
         const ContentDescrip = this.logement.description.valueOf()
         const ContentEquip = this.logement.equipments.map((content) => <li>{content}</li> )
-console.log(this.logement)
+
         return (
             <div>
                 < Banner />
